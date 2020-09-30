@@ -1,13 +1,162 @@
+a {
+	font-style: none;
+}
+
 body {
   margin: 0;
+  flex: initial;
+  flex-direction: row;
+  width: 100%;
+  min-height: 400px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  background: url(logo/image_de_font.jpg) no-repeat;
+  background-position: top;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* code css pour mon formulaire d'inscription */
+.form-login {
+	opacity: 90%;
+	margin-top: 100px;
+	position: flex;
+	width: 50%;
+	margin-left: 25%;
+	bottom: 25%;
+}
+
+.body-login-items {
+	flex-direction: row;
+	align-items: baseline;
+}
+
+.body-login-items div:first-child {
+	height: 30px;
+	margin-left: 10%;
+	width: 60%;
+}
+
+.body-login-items div:last-child {
+	height: 30px;
+	margin-left: 10px;
+	width: 20%;
+}
+
+.header-card {
+	background-color: white;
+}
+
+.header-content {
+	font-family: Consolas;
+	font-size: 0.95em;
+	font-weight: normal;
+	flex: inline;
+	flex-wrap: 0;
+	flex-direction: column;
+	padding-left: 10px;
+	padding-right: 20px;
+}
+
+.header-login-items {
+	flex-direction: column;
+}
+
+.header-login-items div:first-child {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.header-login-items div:last-child {
+	text-align: left;
+	margin-left: 20px;
+	font-family: Consolas;
+}
+
+.name-game {
+	font-family: Arial;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.header-logo {
+	background: url('logo/logo.png') no-repeat center;
+	height: 50px;
+}
+
+.login-modal-body {
+	flex-direction: column;
+}
+
+.login-modal-body p {
+	font-size: 15px;
+	font-family: Consolas;
+	font-variant: auto;
+	margin-left: 20px;
+	margin-top: 30px;
+	padding-right: 20px;
+}
+
+span {
+	margin-left: 5px;
+}
+
+@media all and (max-width: 992px) {
+	body {
+		background-size: 985px;
+	}
+
+	.body-login-items div:first-child {
+		height: 30px;
+		margin-left: 8%;
+		width: 62%;
+	}
+
+	.body-login-items div:last-child {
+		height: 30px;
+		margin-left: 10px;
+		width: 22%;
+	}
+
+	.form-login {
+		position: flex;
+		width: 70%;
+		margin-left: 15%;
+		bottom: 15%;
+	}
+
+	.header-login-items div:first-child {
+		color: blue;
+	}
+}
+
+@media all and (max-width: 680px) {
+	body {
+		background-size: 670px;
+	}
+
+	.body-login-items div:first-child {
+		height: 30px;
+		margin-left: 5%;
+		width: 65%;
+	}
+
+	.body-login-items div:last-child {
+		height: 30px;
+		margin-left: 10px;
+		width: 25%;
+	}
+
+	.form-login {
+		position: flex;
+		width: 90%;
+		margin-left: 5%;
+		bottom: 5%;
+	}
+
+	.header-login-items div:first-child {
+		color: green;
+	}
 }
