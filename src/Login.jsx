@@ -1,9 +1,9 @@
 import React from 'react'
 import LoginForm from './LoginForm'
 
-const Login = ({handleAdd}) => {
+const Login = ({onChangePlayer}) => {
 	return (
-		<div className="container d-none" id="login-interface">
+		<div className="container" id="login-interface">
       <div className="row">
         <div className="form-login">
           <div className="card login-block">
@@ -22,7 +22,7 @@ const Login = ({handleAdd}) => {
               </div>
             </div>
             <div className="card-body">
-              <LoginForm onPlayerAdd={handleAdd}/>
+              <LoginForm onPlayerAdd={onChangePlayer}/>
             </div>
           </div>
         </div>

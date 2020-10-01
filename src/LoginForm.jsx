@@ -12,7 +12,8 @@ const LoginForm = (props) => {
 	const handleSubmit = (event) => {
 		event.preventDefault()
 
-		if(newPlayer !== '') {
+		if(newPlayer.length > 0) {
+			console.log(newPlayer)
 			props.onPlayerAdd(newPlayer)
 		}else {
 			alert('Le champ est vide')
@@ -20,7 +21,7 @@ const LoginForm = (props) => {
 	}
 
 	return (
-		<form action="" onSubmit={handleSubmit}>
+		<form action="" onSubmit={handleSubmit} id="login-form">
 			<div className="row body-login-items">
 	      <div className="form-text">
 	        <input type="text" name="username" id="name" placeholder="votre nom" className="form-control" onChange={handleChange} />

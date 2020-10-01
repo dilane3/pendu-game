@@ -1,3 +1,9 @@
+.alphabet {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
 .button-controle {
 	margin-left: 30%;
 	width: 40%;
@@ -136,7 +142,7 @@
 	opacity: 90%;
 	align-items: baseline;
 	width: 43%;
-	margin-left: 5%;
+	margin-left: 3%;
 	flex: block;
 }
 
@@ -153,6 +159,24 @@
 }
 
 @media all and (max-width: 992px) {
+	.button-controle {
+	  flex: block;
+		margin-left: 30%;
+		width: 40%;
+		align-items: center;
+		margin-top: 0;
+	}
+
+	.control {
+		height: 50px;
+		margin-top: 10px;
+	}
+
+	.lettre img {
+		width: 40px;
+		height: 40px;
+	}
+
 	.pendu-game {
 		width: 90%;
 		margin-left: 5%;
@@ -177,21 +201,15 @@
 		flex: block;
 	}
 
-	.control {
-		height: 50px;
-		margin-top: 10px;
-	}
-
-	.button-controle {
-	  flex: block;
-		margin-left: 30%;
-		width: 40%;
-		align-items: center;
-		margin-top: 0;
-	}
 }
 
 @media all and (max-width: 680px) {
+	.lettre img {
+		width: 30px;
+		height: 30px;
+		padding: 2px;
+	}
+
 	.pendu-game {
 		width: 95%;
 		margin-left: 10px;
